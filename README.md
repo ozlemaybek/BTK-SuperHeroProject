@@ -38,6 +38,8 @@
 
 ## Projeye ait ekran görüntüleri:
 
+> NOT: input bölümleri Plain Text ile yapıldı ama XML dosyasında "EditText" olarak görünüyor. Output ise ekranda Text View'a basıldı.
+
 ![image](https://user-images.githubusercontent.com/109730490/181253594-bc75d9d6-bf85-4c34-a61d-10dc4e24885f.png)
 
 ![image](https://user-images.githubusercontent.com/109730490/181253752-b6f2d7c7-14ae-4fb3-81e9-a65ac08384d2.png)
