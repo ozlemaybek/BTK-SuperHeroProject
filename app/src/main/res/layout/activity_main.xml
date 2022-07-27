@@ -6,13 +6,74 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <!--comment here-->
+
+    <!--Button'un içindeki yazının rengini textColor ile veremem çünkü orada text değil hint var.
+        Bu yüzden textColorHint ile renk verdim.-->
+
+    <EditText
+        android:id="@+id/plainTextJobID"
+        android:layout_width="343dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter the super hero job..."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plainTextAgeID" />
+
+    <EditText
+        android:id="@+id/plainTextAgeID"
+        android:layout_width="343dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter the super hero age..."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plainTextNameID" />
+
+    <EditText
+        android:id="@+id/plainTextNameID"
+        android:layout_width="343dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Enter the super hero name..."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="32dp"
+        android:hint="Create a Super Hero"
+        android:onClick="onClickCreateSuperHero"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plainTextJobID" />
+
+    <TextView
+        android:id="@+id/textViewID"
+        android:layout_width="335dp"
+        android:layout_height="57dp"
+        android:text="Informations:"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonID"
+        app:layout_constraintVertical_bias="0.102" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
